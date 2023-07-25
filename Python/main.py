@@ -1,7 +1,4 @@
 ''' We will make an advanced bank account system.'''
-
-# Main class
-
 class BankAccount:
     ''' This is the main bank account class.'''
     # Constructor
