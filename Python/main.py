@@ -27,17 +27,30 @@ class BankAccount:
         
 # Main function
 def main():
-    # Create a new bank account
-    account = BankAccount("John Doe", 1000.0)
+    acc_name = input("Enter your name: ")
+    acc = BankAccount(acc_name)
+    while True:
+        print("1. Deposit")
+        print("2. Withdraw")
+        print("3. Check balance")
+        print("4. Exit")
+        choice = int(input("Enter your choice: "))
+        if choice == 1:
+            amount = float(input("Enter amount to deposit: "))
+            acc.deposit(amount)
+        elif choice == 2:
+            amount = float(input("Enter amount to withdraw: "))
+            acc.withdraw(amount)
+        elif choice == 3:
+            acc.check_balance()
+        elif choice == 4:
+            break
+        else:
+            print("Invalid choice!")
 
-    # Deposit 500
-    account.deposit(500)
-
-    # Withdraw 250
-    account.withdraw(250)
-
-    # Check balance
-    account.check_balance()
+    SystemExit(0)
 
 # Call main function
 main()
+
+# To run this program, open terminal/cmd and type: python main.py

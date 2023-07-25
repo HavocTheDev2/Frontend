@@ -1,0 +1,133 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.light-dark-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: relative;
+  cursor: pointer;
+}
+
+.label .ball {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.2s linear;
+}
+
+.label .fas {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  font-size: 20px;
+  color: #f1c40f;
+  transition: opacity 0.2s linear;
+}
+
+.label .fas.fa-sun {
+  opacity: 0;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(26px);
+}
+
+.checkbox:checked + .label .fas.fa-moon {
+  opacity: 0;
+}
+
+.checkbox:checked + .label .fas.fa-sun {
+  opacity: 1;
+}
+
+.glass-container {
+  position: relative;
+  z-index: 0;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.glass {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.glass-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  text-align: center;
+}
+
+.glass-title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.glass-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.glass-input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  font-size: 16px;
+}
+
+.glass-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1c40f;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.glass-button:hover {
+  background-color: #e0b800;
+}

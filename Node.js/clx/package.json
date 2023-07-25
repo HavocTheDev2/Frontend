@@ -1,0 +1,21 @@
+{
+    "name": "hydra",
+    "version": "1.0.0",
+    "description": "A data library for sorting arrays using algorithms",
+    "main": "hydra.js",
+    "keywords": ["sorting", "algorithms", "data", "arrays"],
+    "author": "Caleb 'Havoc' Merrill",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/HavocTheDev2/clx.git"
+    },
+    "bugs": {
+      "url": "https://github.com/HavocTheDev2/clx/issues"
+    },
+    "homepage": "https://github.com/HavocTheDev2lx#readme",
+    "scripts": {
+      "test": "echo \"No tests available\""
+    }
+  }
+  
